@@ -17,6 +17,11 @@
                 document.getElementById("loader").remove();
             }, 1000);
         };
+        
+        function go2URL(url) {
+            var win = window.open(url, '_blank');
+            win.focus();
+        }
     </script>
 
     <h1>Hello, world!</h1>
@@ -27,7 +32,7 @@
     <br>
     <img id="collage" src="gt-dp-collage.png" alt="deep collage" width="1920" height="1080">
     <center>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        <a onclick="go2URL('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">
             <button class="freeporn" type="button">Free Porn! </button>
         </a>
         <p style="user-select: none;">or not</p>
