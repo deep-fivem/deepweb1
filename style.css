@@ -1,0 +1,83 @@
+/* For best practice, move CSS below to an external CSS file. */
+
+@keyframes fadeinall {
+    0% {
+        opacity: 1;
+    }
+    97% {
+        opacity: 0;
+    }
+    98% {
+        opacity: 0;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    99% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+body {
+    color: rgb(53, 53, 53);
+    background-color: rgb(51, 51, 51);
+    margin: auto;
+}
+
+#loader {
+    opacity: 1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    background-color: #fff;
+    z-index: 999;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation: fadeinall 1s normal both;
+    animation: fadeinall 1s normal both;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+#collage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+.freeporn {
+    background-color: #f6bf26;
+    border: none;
+    border-radius: 4px;
+    color: rgb(47, 47, 47);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.freeporn:hover {
+    background-color: rgb(255, 238, 82);
+    color: rgb(100, 100, 100);
+    box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.64), 0 17px 50px 0 rgb(255, 255, 255, 0.69);
+}
