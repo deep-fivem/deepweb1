@@ -1,4 +1,8 @@
-/* For best practice, move CSS below to an external CSS file. */
+body {
+    color: rgb(53, 53, 53);
+    background-color: rgb(51, 51, 51);
+    margin: auto;
+}
 
 @keyframes fadeinall {
     0% {
@@ -21,12 +25,6 @@
         opacity: 0;
         z-index: -1;
     }
-}
-
-body {
-    color: rgb(53, 53, 53);
-    background-color: rgb(51, 51, 51);
-    margin: auto;
 }
 
 #loader {
@@ -65,7 +63,7 @@ h1 {
     background-color: #f6bf26;
     border: none;
     border-radius: 4px;
-    color: rgb(47, 47, 47);
+    color: rgb(0, 0, 0);
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
